@@ -1,0 +1,34 @@
+{
+    "model": {
+        "model_name": "meta-llama/Llama-2-7b-hf",
+        "model_dtype": "bf16",
+        "model_method": "genacc19",
+        "model_structure": null,
+        "save_ckp": "ckp/genacc19-9.pth",
+        "load_ckp": null,
+        "config": "config/genacc19.json",
+        "device_map": null
+    },
+
+    "train": {
+        "train_iters": 1000,
+        "max_lr": 0.001,
+        "warmup": 0.01,
+        "beta1": 0.9,
+        "beta2": 0.98,
+        "weight_decay": 0.1,
+        "corpus": [
+            {
+                "data": "data/pg19/train.json",
+                "conf": "config/pg19-trunc2k.json",
+                "partition": 1
+            }
+        ],
+        "accum_grad": 1,
+        "clip_grad": 1.0,
+
+        "save": 1000,
+        "eval": 1000,
+        "tasks": []
+    }
+}

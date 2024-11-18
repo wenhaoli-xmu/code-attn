@@ -1,0 +1,19 @@
+{
+    "fix_layers": [],
+    "num_rnd_layers": 30,
+    "gamma": 64,
+    "mlp_random_init": false,
+
+    "draft_kwargs": {
+        "enable": false,
+        "mask_out": 0.98,
+        "bench_mark": false
+    },
+
+    "enable_lora": false,
+    "lora_kwargs": {
+        "lora_rank": 128,
+        "lora_alpha": 512,
+        "lora_dropout": 0.1
+    }
+}

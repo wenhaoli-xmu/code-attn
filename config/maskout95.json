@@ -1,0 +1,17 @@
+{
+    "fix_layers": [0,1],
+
+    "draft_kwargs": {
+        "enable": true,
+        "mask_out": 0.95,
+        "bench_mark": false,
+        "min_remain": 80
+    },
+
+    "enable_lora": false,
+    "lora_kwargs": {
+        "lora_rank": 128,
+        "lora_alpha": 512,
+        "lora_dropout": 0.1
+    }
+}
